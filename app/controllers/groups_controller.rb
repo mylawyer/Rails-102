@@ -45,7 +45,7 @@ end
 end
 
    def destroy
-    
+
      @group.destroy
   redirect_to groups_path, alert: "Group deleted"
 
@@ -68,5 +68,3 @@ end
      params.require(:group).permit(:title, :description)
 
    end
-
- end
